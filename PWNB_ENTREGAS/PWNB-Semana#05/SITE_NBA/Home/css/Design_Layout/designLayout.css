@@ -1,0 +1,125 @@
+@font-face {
+    /* chamando a fonte que baixei do google.com/fonts */
+    font-family: 'OpenSans';
+    src: url("../../fonts/Open_Sans/OpenSans-Regular.ttf");
+    font-size: 1em;
+}
+@font-face {
+    font-family: Poppins-Bold;
+    src: url("../../fonts/Poppins/Poppins-Bold.ttf");
+    font-size: 1em;
+}
+
+@font-face {
+    font-family: Poppins-Semi-Bold;
+    src: url("../../fonts/Poppins/Poppins-SemiBold.ttf");
+    font-size: 1em;
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url("../../fonts/Poppins/Poppins-Medium.ttf");
+    font-size: 1em;
+}
+
+header {
+    /* mudando a cor do header */
+    width: 100%;
+    height: 172px;
+    background-color: #4515f3;
+    position: relative;
+    /* serve para ficar por tras da imagem */
+}
+
+header .container {
+    position: relative;
+}
+
+
+header .header-black {
+    height: 50px;
+    display: flex;
+    align-items: center; 
+    background-color: #000;
+}
+
+#menu {
+    display: flex;
+    justify-content: center; /* Isso centralizará os itens horizontalmente */
+    align-items: center; /* Isso centralizará os itens verticalmente */
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Isso faz com que os itens da lista fiquem em linha */
+}
+
+#menu ul li {
+    margin-right: 20px; /* Adicione um espaçamento entre os itens do menu */
+    font-family: "OpenSans";
+    white-space: nowrap; /* Evita quebras de linha */
+    overflow: hidden; /* Oculta conteúdo que não caiba */
+    text-overflow: ellipsis; /* Adiciona reticências (...) ao texto que não couber */
+}
+
+#menu ul li:last-child {
+    margin-right: 0; /* Remova a margem direita do último item para evitar espaçamento extra */
+}
+
+#menu ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #f4f6f8;
+}
+
+
+header #logotipo {
+    position: absolute;
+    /* serve para ficar por cima da imagem*/
+    top: 25px;
+    left: 17px;
+    width: 143px;
+    height: 67px;
+    /*aqui estou subindo a imagem um pouquinho */
+
+}
+
+header .Bem-vindo {
+    text-align: center;
+    color: rgb(249, 248, 247);
+    /*background-color: #000; */
+}
+
+header .se_voce_e_um {
+    color: rgb(249, 248, 247);
+    font-size: 20px;
+    margin-left: 58px;
+    font-family: Poppins-Semi-Bold;
+}
+
+body {
+    width: 100%;
+    background-color: hsl(35, 96%, 50%);
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+    /* Garante que o corpo tenha pelo menos 100% da altura da janela de visualização */
+}
+
+body .p{
+    font-family: Poppins-Medium, sans-serif;
+    font-size: 18px;
+}
+
+footer {
+    height: 179px;
+    width: 100%;
+    color: #f4f6f8;
+    background-color: #000;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+}
