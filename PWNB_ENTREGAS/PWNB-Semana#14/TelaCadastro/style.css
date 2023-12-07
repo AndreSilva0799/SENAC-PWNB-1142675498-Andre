@@ -1,0 +1,12 @@
+body .container {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: rgba(0, 255, 255, 0.297);
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+

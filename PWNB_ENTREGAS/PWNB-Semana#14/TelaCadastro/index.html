@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Cadastro</title>
+    <link rel="stylesheet" href="lib/bootstrap3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="main();">
+
+    <div class="container">
+        <h1>Cadastro de clientes</h1>
+        <form>
+            <div class="form-group row">
+                <label for="nome" class="col-md-3 col-form-label">Nome:</label>
+                <div class="col-md-3">
+                    <input type="text" id="nome" class="form-control" placeholder="Digite o nome">
+                </div>
+                <label for="tipoCliente" class="col-md-3 col-form-label">Tipo de Cliente:</label>
+                <div class="col-md-3">
+                    <select id="tipoCliente" name="tipoCliente" class="form-control">
+                        <option value="bronze">Bronze</option>
+                        <option value="prata">Prata</option>
+                        <option value="ouro">Ouro</option>
+                        <option value="platina">Platina</option>
+                        <option value="diamante">Diamante</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="sobrenome" class="col-md-3 col-form-label">Sobrenome:</label>
+                <div class="col-md-3">
+                    <input type="text" id="sobrenome" class="form-control" placeholder="Digite o sobrenome">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="data-nascimento" class="col-md-3 col-form-label">Data de Nascimento:</label>
+                <div class="col-md-3">
+                    <input type="date" id="data-nascimento" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="cep" class="col-md-3 col-form-label">CEP:</label>
+                <div class="col-md-2">
+                    <input type="text" id="cep" class="form-control" placeholder="00000-000">
+                </div>
+                <div class="col-md-1">
+                    <button id="botaoConsultarCEP" type="button" class="btn btn-primary">Consultar</button>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="cidade" class="col-md-3 col-form-label">Cidade:</label>
+                <div class="col-md-3">
+                    <input type="text" id="cidade" class="form-control" placeholder="Digite a cidade" >
+                </div>
+            </div>
+           
+            <div class="form-group row">
+                <label for="endereco" class="col-md-3 col-form-label">Endereço:</label>
+                <div class="col-md-3">
+                    <input type="text" id="endereco" class="form-control" placeholder="Digite o endereço" >
+                </div>
+                <label for="idCliente" class="col-md-3 col-form-label">ID Cliente:</label>
+                <div class="col-md-3">
+                    <input type="text" id="idCliente" class="form-control" placeholder="Digite o ID do cliente">
+                </div>
+            </div>
+            <!-- Outros campos aqui -->
+
+        </form>
+
+        <section id="botoes">
+            <div class="row">
+                <div class="col-md-2">
+                    <button id="botaoIncluir" type="submit" class="btn btn-primary">Incluir</button>
+                </div>
+                <div class="col-md-2">
+                    <button id="botaoListarCliente" type="submit" class="btn btn-success">Listar cliente</button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <script src="js.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap3/js/bootstrap.min.js"></script>
+    
+
+</body>
+
+</html>
